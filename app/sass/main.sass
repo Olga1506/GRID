@@ -6,6 +6,11 @@
 .grid
   display: grid
 
+.container
+  max-width: 1200px
+  margin: auto
+  padding: 0 $gutter
+
   //Header
 //================================================
 .main-header
@@ -46,8 +51,9 @@
   text-decoration: none
   background-color: $accent
   padding: 12px 55px
-  font-size: 13px
-  font-weight: 700
+  font-size: 20px
+  letter-spacing: 1.5px
+  font-weight: 800
   border-radius: 2px
   text-align: center
   position: relative
@@ -106,7 +112,7 @@
   align-content: center
   text-align: center
   padding: $gutter
-  font-size: 20px
+  font-size: 22px
   font-weight: bold
   color: #ffff
   position: relative
@@ -140,6 +146,74 @@
 .buttoncase
   grid-column: 1 / 5
   padding: $gutter $gutter 50px
+//==========================================================
+
+ //Section-ready
+ // ==============================================
+
+.landing-section
+  padding: 80px 0
+  h2
+    font-size: 34px
+    font-weight: 800
+    color: $dark
+
+.section-ready
+  background-color: $light
+  .container
+    grid-template-columns: 1fr 1fr
+
+.ready-left
+  border-right: 1px solid #dadada
+  font-size: 18px
+  padding:
+    top: 60px
+    bottom: 60px
+    right: 60px
+  h2
+    margin-top: 0
+    margin-bottom: 40px
+
+.ready-right
+  padding-left: 40px
+
+  //==========================================================
+
+//Formsection
+//==========================================
+
+.formsection
+  padding: 30px 0
+  background-color: $dark
+  input
+    background-color: lighten($dark,6%)
+  form
+    grid-gap: $gutter
+    grid-template-columns: repeat(4,1fr)
+  .button
+    font-size: 17px
+    padding: 14.5px
+    width: 100%
+
+input, textarea
+  border: none
+  padding: 15px 20px
+  width: 100%
+  font-family: Arial,sans-serif
+  font-style: italic
+  outline: none
+  transition: background-color .25s ease
+  &:focus
+    background-color: $light
+  &::placeholder
+    color: lighten($dark,20%)
+
+
+
+
+
+
+
 
 
 
